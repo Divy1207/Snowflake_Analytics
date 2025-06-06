@@ -1,0 +1,26 @@
+models:
+- name: orders
+  description: This model provides a comprehensive view of orders, including details
+    such as customer information, order status, total price, and shipping priority.
+    It is useful for analyzing order trends, customer purchasing behavior, and operational
+    efficiency.
+  columns:
+  - name: o_orderkey
+    description: A unique identifier for each order.
+  - name: o_custkey
+    description: A unique identifier for the customer who placed the order.
+  - name: o_orderstatus
+    description: The current status of the order, indicating its progress in the fulfillment
+      process.
+  - name: o_totalprice
+    description: The total price of the order, representing the sum of all items included.
+  - name: o_orderdate
+    description: The date when the order was placed.
+  - name: o_orderpriority
+    description: The priority level of the order, used to determine processing urgency.
+  - name: o_clerk
+    description: The identifier of the clerk responsible for handling the order.
+  - name: o_shippriority
+    description: The shipping priority assigned to the order, affecting delivery speed.
+  - name: o_comment
+    description: Additional comments or notes related to the order.
