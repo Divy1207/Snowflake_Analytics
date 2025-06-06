@@ -1,0 +1,25 @@
+models:
+  - name: purchases
+    columns:
+      - name: o_orderkey
+        data_tests:
+          - unique
+          - not_null
+      - name: o_custkey
+        data_tests:
+          - not_null
+      - name: c_name
+        data_tests:
+          - not_null
+      - name: o_orderstatus
+        data_tests:
+          - not_null
+      - name: o_totalprice
+        data_tests:
+          - not_null
+      - name: o_orderdate
+        data_tests:
+          - not_null
+      - name: o_orderpriority
+        data_tests:
+          - not_null
