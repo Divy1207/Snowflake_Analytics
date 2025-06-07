@@ -1,9 +1,5 @@
 SELECT
-    CASE
-        WHEN o_orderstatus = 'P' THEN 'Pending'
-        WHEN o_orderstatus = 'O' THEN 'Completed'
-        WHEN o_orderstatus = 'F' THEN 'Failed'
-    END as order_status,
+    {{- case_order_status('o_orderstatus') -}} AS order_status,
     COUNT(*) as total_count
 FROM
     {{ source('analytics', 'orders') }}
