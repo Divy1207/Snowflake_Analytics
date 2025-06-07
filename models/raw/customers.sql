@@ -9,4 +9,4 @@ WITH customers AS (
 
 )
 
-SELECT * FROM customers
+SELECT * FROM {{ source('analytics', 'customers') }}
