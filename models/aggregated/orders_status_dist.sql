@@ -1,5 +1,5 @@
 SELECT
-    {{- case_order_status('o_orderstatus') -}} AS order_status,
+    {{- case_order_status('o_orderstatus') -}} AS order_statues,
     COUNT(*) as total_count
 FROM
     {{ source('analytics', 'orders') }}
